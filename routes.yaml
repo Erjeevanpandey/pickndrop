@@ -1,0 +1,36 @@
+foo_route:
+    path:     /foo
+    defaults: { controller: 'FooController::indexAction' }
+
+user_login:
+  path: /users/login
+  defaults: { controller: 'app\api\UserController::login'}
+ 
+customer_store:
+  path: /customer/store
+  defaults: { controller: 'app\api\CustomerController::store'}
+
+customer_edit:
+  path: /customer/edit/{id}
+  defaults: { controller: 'app\api\CustomerController::edit'}
+  requirements:
+      id: '[0-9]+'
+
+customer_delete:
+  path: /customer/delete/{id}
+  defaults: { controller: 'app\api\CustomerController::delete'}
+  requirements:
+      id: '[0-9]+'
+
+distance:
+  path: /customer/distance
+  defaults: { controller: 'app\api\CustomerController::distance'}
+
+
+ 
+
+foo_placeholder_route:
+    path:     /foo/{id}
+    defaults: { controller: 'FooController::loadAction' }
+    requirements:
+        id: '[0-9]+'

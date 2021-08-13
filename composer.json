@@ -1,0 +1,17 @@
+{
+    "require": {
+        "illuminate/database": "^8.54",
+        "symfony/routing": "^5.3",
+        "symfony/http-foundation": "^5.3",
+        "symfony/yaml": "^5.3",
+        "symfony/config": "^5.3",
+        "doctrine/annotations": "^1.13",
+        "firebase/php-jwt": "^5.4"
+    },
+    "autoload": {
+        "psr-4":{
+            "app\\":"./app"
+        }
+    }
+  
+}
